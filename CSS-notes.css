@@ -1,0 +1,43 @@
+body{
+    font-size:16px;
+}
+h2{
+    font-size:30px;
+    float:center;
+    text-align:center;
+}
+h1{
+    font-family:"Rakkas",cursive;
+    text-align:center;
+}
+h3{
+    display:inline; /*did this to eliminate the newline added by the headings tags automatically. See the code for the line that says: "where to find Web Fonts"*/
+}
+.fancy{
+    font-family:Happy Monkey, cursive;
+}
+.small-links{
+    font-size:13px;
+}
+.footnotes{
+    font-size:13px;
+    font-style:italic;
+    float:center;
+    width:50%;
+    border-top:dashed 1px;
+    border-bottom:dashed 1px;
+    padding-top:15px;
+    
+}
+#index-heading{
+    font-family:serif;
+    text-align: left;
+}
+#index{
+    border: 1px 1px 1px 1px;
+    float:center;
+    box-align:center;
+    width:50%;
+    border-style:dashed;
+    padding:10px 10px 10px 10px;
+}
