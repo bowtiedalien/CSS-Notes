@@ -36,12 +36,12 @@
 
 ### What does CSS allow you to do? 
 - allows you to control
-  - color <i class="em em-art"></i>
-  - fonts <i class="em em-writing_hand"></i>
+  - color 🎨
+  - fonts 🖌
   - positioning 
   - spacing 
-  - sizing <i class="em em-mag_right"></i>
-  - decorations 
+  - sizing 🔎
+  - decorations 🎊
   - transitions
 
 ## identifiable colour names:
