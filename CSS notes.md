@@ -38,11 +38,11 @@
 - allows you to control
   - color 🎨
   - fonts 🖌
-  - positioning 
-  - spacing 
+  - positioning 📍
+  - spacing 📐 
   - sizing 🔎
   - decorations 🎊
-  - transitions
+  - transitions 🙈 🙉 🙊
 
 ## identifiable colour names:
 - <span style="color:red">red</span>
