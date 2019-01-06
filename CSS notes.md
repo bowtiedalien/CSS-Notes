@@ -10,6 +10,16 @@
 
 # CSS notes
 
+### What does CSS allow you to do? 
+- allows you to control
+  - color 🎨
+  - fonts 🖌
+  - positioning 📍
+  - spacing 📐 
+  - sizing 🔎
+  - decorations 🎊
+  - transitions 🙈 🙉 🙊
+  
 <h2 id="index-heading">Index</h2>
 <div id="index">
 
@@ -34,15 +44,6 @@
 
 <br/>
 
-### What does CSS allow you to do? 
-- allows you to control
-  - color 🎨
-  - fonts 🖌
-  - positioning 📍
-  - spacing 📐 
-  - sizing 🔎
-  - decorations 🎊
-  - transitions 🙈 🙉 🙊
 
 ## identifiable colour names:
 - <span style="color:red">red</span>
