@@ -27,6 +27,7 @@
 
   - [Media Queries](#media-queries)
   - [Aligning items in a Grid cell](#aligning-an-item-inside-its-cell)
+  - [Justification and Alignment in CSS](https://alligator.io/css/align-justify/)
   - [Changing grid column width responsively](#responsive-grid-columns)
     
 
@@ -56,7 +57,7 @@
 
 lots more <a href="https://www.w3schools.com/cssref/css_colors.asp">here</a> !
 
-Note: more specific colour tones can be added using *hex color codes* and *RGB colour codes*.
+**Note:** more specific colour tones can be added using *hex color codes* and *RGB colour codes*.
 
 to add a hex colour:
 ```css
@@ -147,13 +148,13 @@ Rules:
  ```
  the second argument inside the `var()` brackets is the _fallback value_. If we can not use the variable for whatever reason (be it the variable name is spelled wrong or someone is using an old browser that does not use CSS variables), the browser will execute this value.
 
- Note: variables are available inside the element in which you declare them. In order to make variables available throughout the stylesheet, define them in the `root` element.
+ **Note:** variables are available inside the element in which you declare them. In order to make variables available throughout the stylesheet, define them in the `root` element.
 ```css
 :root{
     --penguin-skin:black;
 }
 ```
-Note2: variables can be overriden in specific elements individually. For example, if `--penguin-skin` is used in `.penguin-top`, we can override it inside `.penguin-top` individually and make the colour grey instead.
+**Note2:** variables can be overriden in specific elements individually. For example, if `--penguin-skin` is used in `.penguin-top`, we can override it inside `.penguin-top` individually and make the colour grey instead.
 
 ```css
 .penguin-top{
@@ -174,6 +175,10 @@ definition: media queries can be used to change variables depending on the size 
 }
 ```
 so now when you change the size of the browser window and make it small enough to be 350px, the penguin will be smaller and its skin will be black. As long as its bigger than 350px, this media query will not apply.
+
+*Remark*: Usually, we care about adjusting the layout for two screen width:
+1. smartphone layout: min-width(480)
+2. desktop layout: min-width(1024)
 
 ## CSS Grids
 
@@ -200,7 +205,7 @@ how to define a certain `div` as a grid + all the related properties:
 }
 ```
 
-Note:
+**Note:**
 1) setting a column as `auto` means that it will be as wide as it needs to be for elements to fit in exactly
 2) a shorthand property for `grid-column-gap` and `grid-row-gap` is `grid-gap`:
 ```css
@@ -230,7 +235,7 @@ Now this element will take the first two columns and the first two rows.
 
 <img src="grid-placement.png" alt="grid placement.png">
 
-Note: you can also still define areas for the elments without setting up area names (i.e. `grid-template-areas`): 
+**Note:** you can also still define areas for the elments without setting up area names (i.e. `grid-template-areas`): 
 
 ```css
 .item1{
@@ -251,7 +256,7 @@ item1{
     align-self:start; /*align vertically*/
 }
 ```
-Remark: if you want all the items in a grid to share the same alignment, use `justify-items` and `align-items` in the parent container.
+*Remark:* if you want all the items in a grid to share the same alignment, use `justify-items` and `align-items` in the parent container.
 
 ```css 
 .container{
@@ -271,9 +276,9 @@ instead of defining a fixed number of columns for a grid, we can let the browser
 what this is saying:
 create as many columns as you can in a given display with the width of the columns always being 90px as a minimum value or 1fr of the display as a maximum value.
 
-Note: you can also use `auto-fit` instead of `auto-fill` and they will do the same thing except for the fact that `auto-fit` will make sure your columns always stretch up to take the whole width of the display, while `auto-fill` does not necessarily ensure that.
+**Note:** you can also use `auto-fit` instead of `auto-fill` and they will do the same thing except for the fact that `auto-fit` will make sure your columns always stretch up to take the whole width of the display, while `auto-fill` does not necessarily ensure that.
 
-Observation: Rand Morten adviced: "first build the whole website for mobile display, and use that as a fallback if the browser does not support grids." In addition to that, building the website first as mobile version, we can later test for `min-width` using media queries and responsively change the layout. Bottomline, do start with the mobile version because this is the worst case scenario where all your bigger layouts might fail, then use queries and start expanding from there.
+*Observation:* Rand Morten adviced: "first build the whole website for mobile display, and use that as a fallback if the browser does not support grids." In addition to that, building the website first as mobile version, we can later test for `min-width` using media queries and responsively change the layout. Bottomline, do start with the mobile version because this is the worst case scenario where all your bigger layouts might fail, then use queries and start expanding from there.
 
 
 [^summarised]: this section is a compression of multiple sections from the ref video. 
@@ -284,3 +289,6 @@ Observation: Rand Morten adviced: "first build the whole website for mobile disp
     2. <span class="small-links">[Using the minmax function](https://youtu.be/ieTHC78giGQ?t=3894)</span>
     3. <span class="small-links">[Using auto-fill](https://youtu.be/ieTHC78giGQ?t=3948)</span>
     4. <span class="small-links">[Using auto-fit](https://youtu.be/ieTHC78giGQ?t=3999)</span>
+
+References:
+1. [CSS Grid Changes Everything by Morten Rand Hendriksen](https://www.youtube.com/watch?v=7kVeCqQCxlk)
